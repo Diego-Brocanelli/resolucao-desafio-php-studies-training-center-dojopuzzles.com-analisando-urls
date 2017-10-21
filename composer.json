@@ -1,0 +1,20 @@
+{
+    "name": "diego/resolucao-desafio-php-studies-training-center-dojopuzzles.com-analisando-urls",
+    "description": "Analisador de URL",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego Brocanelli",
+            "email": "diegod2@msn.com"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "DiegoBrocanelli\\":"src/"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^6.4"
+    }
+}
