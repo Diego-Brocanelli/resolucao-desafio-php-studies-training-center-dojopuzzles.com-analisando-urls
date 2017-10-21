@@ -2,15 +2,18 @@
 
 declare(strict_types=1);
 
-use DiegoBrocanelli\URL\Url;
+use DiegoBrocanelli\URL\URL;
 use DiegoBrocanelli\URL\Analyzer\URLAnalyzer;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @author Diego Brocanelli <diegod2@msn.com>
+ */
 final class URLAnalyzerTest extends TestCase
 {
     public function setUp()
     {
-        $url = new Url('http://www.google.com/mail?user=fulano');
+        $url = new URL('http://www.google.com/mail?user=fulano');
 
         $this->analyzer = new URLAnalyzer($url);
     }
@@ -95,7 +98,7 @@ final class URLAnalyzerTest extends TestCase
     }
 
     /**
-     * Test undefind host
+     * Test empty host
      *
      * @return void
      */
@@ -109,7 +112,7 @@ final class URLAnalyzerTest extends TestCase
     }
 
     /**
-     * Test undefind host
+     * Test empty host
      *
      * @return void
      */
@@ -123,7 +126,7 @@ final class URLAnalyzerTest extends TestCase
     }
 
     /**
-     * Test undefind path
+     * Test empty path
      *
      * @return void
      */
@@ -137,7 +140,7 @@ final class URLAnalyzerTest extends TestCase
     }
 
     /**
-     * Test undefind domain
+     * Test empty domain
      *
      * @return void
      */
