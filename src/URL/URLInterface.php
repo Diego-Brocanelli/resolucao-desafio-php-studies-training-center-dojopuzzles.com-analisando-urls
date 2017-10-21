@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace DiegoBrocanelli\Url;
+
 /**
  * @author Diego Brocanelli <diegod2@msn.com>
  */
