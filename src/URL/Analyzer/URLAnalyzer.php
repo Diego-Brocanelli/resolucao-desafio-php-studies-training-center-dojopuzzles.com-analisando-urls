@@ -40,6 +40,10 @@ class URLAnalyzer implements URLAnalyzerInterface
      */
     public function getHost(): string
     {
+        if(!array_key_exists('host', $this->url)){
+            return '';
+        }
+
         $domain = $this->url['host'];
         $www = '/www/';
         if(preg_match($www, $domain)){
@@ -61,6 +65,10 @@ class URLAnalyzer implements URLAnalyzerInterface
      */
     public function getDomain(): string
     {
+        if(!filter_var('http://'.$this->url['host'], FILTER_VALIDATE_URL)){
+            return '';
+        }
+
         return str_replace('www.', '', $this->url['host']);
     }
 
@@ -71,6 +79,10 @@ class URLAnalyzer implements URLAnalyzerInterface
      */
     public function getPath(): string
     {
+        if(!array_key_exists('path', $this->url)){
+            return '';
+        }
+
         return str_replace('www.', '', $this->url['path']);
     }
 
@@ -79,8 +91,12 @@ class URLAnalyzer implements URLAnalyzerInterface
      *
      * @return array
      */
-    public function getParamters(): array
+    public function getParameters(): array
     {
+        if(!array_key_exists('query', $this->url)){
+            return [];
+        }
+
         $query = $this->url['query'];
 
         parse_str($query, $parameters);
