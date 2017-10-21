@@ -45,6 +45,7 @@ class URLAnalyzer implements URLAnalyzerInterface
         }
 
         $domain = $this->url['host'];
+        
         $www = '/www/';
         if(preg_match($www, $domain)){
             return 'www';
