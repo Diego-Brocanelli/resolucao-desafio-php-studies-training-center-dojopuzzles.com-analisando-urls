@@ -1,0 +1,82 @@
+{
+    "name": "DiegoBrocanelli\\Url\\URLInterface",
+    "line": 10,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "Diego",
+                "Brocanelli",
+                "<diegod2@msn.com>"
+            ]
+        ]
+    },
+    "namespace": "DiegoBrocanelli\\Url",
+    "file": "\/home\/diego\/vhost\/github\/resolucao-desafio-php-studies-training-center-dojopuzzles.com-analisando-urls\/docs\/..\/src\/URL\/URLInterface.php",
+    "relative_file": null,
+    "hash": "721968b4ceb6ae645d85abcd021622fd698755a7",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": true,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 15,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "urlString": {
+                    "name": "urlString",
+                    "line": 15,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getURL": {
+            "name": "getURL",
+            "line": 22,
+            "short_desc": "Return the URL",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,173 @@
+{
+    "name": "DiegoBrocanelli\\Url\\Analyzer\\URLAnalyzerInterface",
+    "line": 12,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "Diego",
+                "Brocanelli",
+                "<diegod2@msn.com>"
+            ]
+        ]
+    },
+    "namespace": "DiegoBrocanelli\\Url\\Analyzer",
+    "file": "\/home\/diego\/vhost\/github\/resolucao-desafio-php-studies-training-center-dojopuzzles.com-analisando-urls\/docs\/..\/src\/URL\/Analyzer\/URLAnalyzerInterface.php",
+    "relative_file": null,
+    "hash": "98ef2854742b6e57583b5737e302ff2855bdeb5f",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": true,
+    "aliases": {
+        "Url": "DiegoBrocanelli\\Url\\Url"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 17,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [
+                "The \"urlString\" @param tag variable name is wrong (should be \"url\")"
+            ],
+            "parameters": {
+                "url": {
+                    "name": "url",
+                    "line": 17,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\DiegoBrocanelli\\Url\\Url",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "DiegoBrocanelli",
+                            "Url",
+                            "Url"
+                        ],
+                        "attributes": {
+                            "startLine": 17,
+                            "endLine": 17
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getProtocol": {
+            "name": "getProtocol",
+            "line": 24,
+            "short_desc": "Return the protocol type",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getHost": {
+            "name": "getHost",
+            "line": 31,
+            "short_desc": "return the host",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getDomain": {
+            "name": "getDomain",
+            "line": 38,
+            "short_desc": "return the domain",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getPath": {
+            "name": "getPath",
+            "line": 45,
+            "short_desc": "return the path",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getParameters": {
+            "name": "getParameters",
+            "line": 52,
+            "short_desc": "return the parameters of url",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}
