@@ -49,5 +49,5 @@ interface URLAnalyzerInterface
      *
      * @return array
      */
-    public function getParamters(): array;
+    public function getParameters(): array;
 }
