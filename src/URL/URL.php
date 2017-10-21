@@ -11,7 +11,7 @@ use DiegoBrocanelli\URL\URLInterfaces;
  */
 class URL implements URLInterface
 {
-    protected $url;
+    private $url;
 
     /**
      * @param string $urlString
@@ -26,48 +26,8 @@ class URL implements URLInterface
      *
      * @return string
      */
-    public function getProtocol(): string
+    public function getURL(): string
     {
-
-    }
-
-    /**
-     * return the host
-     *
-     * @return string
-     */
-    public function getHost(): string
-    {
-
-    }
-
-    /**
-     * return the domain
-     *
-     * @return string
-     */
-    public function getDomain(): string
-    {
-
-    }
-
-    /**
-     * return the path
-     *
-     * @return string
-     */
-    public function getPath(): string
-    {
-
-    }
-
-    /**
-     * return the parameters of url
-     *
-     * @return array
-     */
-    public function getParamters(): array
-    {
-        
+        return $this->url;
     }
 }
