@@ -65,4 +65,32 @@ final class URLAnalyzerTest extends TestCase
         $this->assertEquals( true, array_key_exists('user', $this->analyzer->getParamters()) );
         $this->assertEquals( 'fulano', $this->analyzer->getParamters()['user'] );
     }
+
+    /**
+     * Test host ssh
+     *
+     * @return void
+     */
+    public function testSSHHost(): void
+    {
+        $url = new Url('http://ssh.google.com/mail?user=fulano');
+        
+        $analyzer = new URLAnalyzer($url);
+
+        $this->assertEquals('ssh', $analyzer->getHost());
+    }
+
+    /**
+     * Test undefind host
+     *
+     * @return void
+     */
+    public function testUndefinedHost()
+    {
+        $url = new Url('http://google.com/mail?user=fulano');
+        
+        $analyzer = new URLAnalyzer($url);
+
+        $this->assertEquals('undefined', $analyzer->getHost());
+    }
 }
