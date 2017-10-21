@@ -17,19 +17,20 @@ class URLAnalyzer implements URLAnalyzerInterface
     /**
      * @param string $urlString
      */
-    public function __construct(URL $urlString)
+    public function __construct(URL $url)
     {
-        $this->url = $urlString;
+        $this->url = parse_url( $url->getURL() );
     }
 
     /**
      * Return the protocol type
-     *
+     *    - HTTP or HTTPS
+     * 
      * @return string
      */
     public function getProtocol(): string
     {
-
+        return $this->url['scheme'];
     }
 
     /**
@@ -39,7 +40,18 @@ class URLAnalyzer implements URLAnalyzerInterface
      */
     public function getHost(): string
     {
+        $domain = $this->url['host'];
+        $www = '/www/';
+        if(preg_match($www, $domain)){
+            return 'www';
+        }
+        
+        $ssh = '/ssh/';
+        if(preg_match($ssh, $domain)){
+            return 'ssh';
+        }
 
+        return 'undefined';
     }
 
     /**
@@ -49,7 +61,7 @@ class URLAnalyzer implements URLAnalyzerInterface
      */
     public function getDomain(): string
     {
-
+        return str_replace('www.', '', $this->url['host']);
     }
 
     /**
@@ -59,7 +71,7 @@ class URLAnalyzer implements URLAnalyzerInterface
      */
     public function getPath(): string
     {
-
+        return str_replace('www.', '', $this->url['path']);
     }
 
     /**
@@ -69,6 +81,10 @@ class URLAnalyzer implements URLAnalyzerInterface
      */
     public function getParamters(): array
     {
-        
+        $query = $this->url['query'];
+
+        parse_str($query, $parameters);
+
+        return $parameters;
     }
 }
