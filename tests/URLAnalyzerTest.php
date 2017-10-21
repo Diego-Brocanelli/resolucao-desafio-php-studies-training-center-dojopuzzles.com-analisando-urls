@@ -2,14 +2,15 @@
 
 declare(strict_types=1);
 
-use DiegoBrocanelli\URL\Analyzer\Url as URLAnalyzer;
+use DiegoBrocanelli\URL\Url;
+use DiegoBrocanelli\URL\Analyzer\URLAnalyzer;
 use PHPUnit\Framework\TestCase;
 
 final class URLAnalyzerTest extends TestCase
 {
     public function setUp()
     {
-        $url = 'http://www.google.com/mail?user=fulano';
+        $url = new Url('http://www.google.com/mail?user=fulano');
 
         $this->analyzer = new URLAnalyzer($url);
     }

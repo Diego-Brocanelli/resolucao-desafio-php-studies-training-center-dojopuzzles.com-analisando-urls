@@ -4,19 +4,20 @@ declare(strict_types=1);
 
 namespace DiegoBrocanelli\URL\Analyzer;
 
+use DiegoBrocanelli\Url\Url;
 use DiegoBrocanelli\URL\Analyzer\URLAnalyzerInterface;
 
 /**
  * @author Diego Brocanelli <diegod2@msn.com>
  */
-class URL implements URLAnalyzerInterface
+class URLAnalyzer implements URLAnalyzerInterface
 {
     protected $url;
 
     /**
      * @param string $urlString
      */
-    public function __construct(string $urlString)
+    public function __construct(URL $urlString)
     {
         $this->url = $urlString;
     }

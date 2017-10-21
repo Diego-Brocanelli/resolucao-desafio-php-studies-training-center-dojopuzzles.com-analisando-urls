@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace DiegoBrocanelli\Url\Analyzer;
 
+use DiegoBrocanelli\Url\Url;
+
 /**
  * @author Diego Brocanelli <diegod2@msn.com>
  */
@@ -12,7 +14,7 @@ interface URLAnalyzerInterface
     /**
      * @param string $urlString
      */
-    public function __construct(string $urlString);
+    public function __construct(URL $url);
 
     /**
      * Return the protocol type
