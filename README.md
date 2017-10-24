@@ -1,5 +1,8 @@
 # Resolução do desafio do Grupo de Estudos PHP/POO do Training Center
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/d8d74fd06dd9e4f2f555/maintainability)](https://codeclimate.com/github/Diego-Brocanelli/resolucao-desafio-php-studies-training-center-dojopuzzles.com-analisando-urls/maintainability)
+
+
 ## Desafio: Analisando URL
 
 **Desrcição do desafio:**
