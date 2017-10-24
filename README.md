@@ -38,6 +38,6 @@ $analyzer->getParameters(); // return: ['post' => 'iniciando-com-composer']
 
 ## Documentação
 
-- [Acesse a documentação](/docs/build/indes.html);
+- [Acesse a documentação](/docs/build);
 
 ### License - [MIT](https://github.com/Diego-Brocanelli/resolucao-desafio-php-studies-training-center-dojopuzzles.com-analisando-urls/blob/master/LICENSE)
