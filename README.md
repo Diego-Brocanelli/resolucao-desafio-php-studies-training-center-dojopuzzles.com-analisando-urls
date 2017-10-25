@@ -1,6 +1,7 @@
 # Resolução do desafio do Grupo de Estudos PHP/POO do Training Center
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/d8d74fd06dd9e4f2f555/maintainability)](https://codeclimate.com/github/Diego-Brocanelli/resolucao-desafio-php-studies-training-center-dojopuzzles.com-analisando-urls/maintainability)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b7f4394e9c024799b9efe6cf31c011e5)](https://www.codacy.com/app/Diego-Brocanelli/resolucao-desafio-php-studies-training-center-dojopuzzles.com-analisando-urls?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Diego-Brocanelli/resolucao-desafio-php-studies-training-center-dojopuzzles.com-analisando-urls&amp;utm_campaign=Badge_Grade)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/a35d4042-a05e-4e9b-ac73-1efb5057e557/big.png)](https://insight.sensiolabs.com/projects/a35d4042-a05e-4e9b-ac73-1efb5057e557)
 
 ## Desafio: Analisando URL
